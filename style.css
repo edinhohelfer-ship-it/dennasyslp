@@ -1,0 +1,16 @@
+html, body { margin: 0; padding: 0; }
+body { background: #2C2C2A; }
+@keyframes breatheLight { 0%, 100% { opacity: 0.08; } 50% { opacity: 0.20; } }
+@keyframes breatheDark  { 0%, 100% { opacity: 0.05; } 50% { opacity: 0.12; } }
+@keyframes dividerGlow  { 0%, 100% { width: 39px; opacity: 0.4; } 50% { width: 70px; opacity: 1; } }
+.bigCrystalLight { animation: breatheLight 4.5s ease-in-out infinite; }
+.bigCrystalDark  { animation: breatheDark 4.5s ease-in-out infinite; }
+.cardDivider     { animation: dividerGlow 4.5s ease-in-out infinite; }
+.cardDivider { border: none; border-top: 1px solid #C9A66B; }
+.heroPhrase { font-size: 24px; white-space: nowrap; }
+@media (max-width: 600px) {
+  .heroPhrase { white-space: normal; font-size: 22px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bigCrystalLight, .bigCrystalDark, .cardDivider { animation: none; }
+}
