@@ -10,6 +10,47 @@ body { background: #2C2C2A; }
 .heroPhrase { font-size: 24px; white-space: nowrap; }
 @media (max-width: 600px) {
   .heroPhrase { white-space: normal; font-size: 22px; }
+
+  .cardsGrid {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+  .card {
+    padding: 16px !important;
+    min-height: 104px !important;
+  }
+  .cardContent {
+    flex-direction: row !important;
+    align-items: center !important;
+    text-align: left !important;
+    gap: 14px;
+  }
+  .cardSymbol {
+    width: 42px !important;
+    height: 42px !important;
+    flex-shrink: 0;
+  }
+  .cardBody {
+    flex: 1;
+    min-width: 0;
+  }
+  .cardTitleRow {
+    justify-content: flex-start !important;
+    margin-top: 0 !important;
+  }
+  .cardDesc {
+    margin-top: 4px !important;
+  }
+  .cardDividerLine {
+    display: none !important;
+  }
+  .cardCrystal {
+    top: 50% !important;
+    right: -30px !important;
+    transform: translateY(-50%) !important;
+    width: 90px !important;
+    height: 90px !important;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   .bigCrystalLight, .bigCrystalDark, .cardDivider { animation: none; }
