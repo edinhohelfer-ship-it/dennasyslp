@@ -9,7 +9,7 @@ body { background: #2C2C2A; }
 .cardDivider { border: none; border-top: 1px solid #C9A66B; }
 .heroPhrase { font-size: 24px; white-space: nowrap; }
 @media (max-width: 600px) {
-  .heroPhrase { white-space: normal; font-size: 22px; margin-top: 16px !important; }
+  .heroPhrase { white-space: normal; font-size: 22px; margin-top: 48px !important; }
 
   .siteHeader {
     padding: 20px 24px 8px !important;
@@ -18,10 +18,10 @@ body { background: #2C2C2A; }
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 16px;
+    gap: 10px;
   }
   .headerSymbol {
-    width: 52px !important;
+    width: 28px !important;
     height: auto !important;
     margin: 0 !important;
     flex-shrink: 0;
@@ -30,12 +30,12 @@ body { background: #2C2C2A; }
     text-align: left;
   }
   .headerWordmark {
-    font-size: 22px !important;
+    font-size: 14px !important;
     margin-top: 0 !important;
   }
   .headerSubtitle {
-    font-size: 11px !important;
-    margin-top: 3px !important;
+    font-size: 8px !important;
+    margin-top: 2px !important;
   }
   .headerDivider {
     display: none !important;
